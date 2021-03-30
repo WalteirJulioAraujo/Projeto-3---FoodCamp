@@ -76,6 +76,7 @@ body{
     height: 216px;
     border-radius: 9px;
     margin-right: 16px;
+    padding: 0px 14px  ;
     background-color: #fff;
     display: flex;
     flex-direction: column;
