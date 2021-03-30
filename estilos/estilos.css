@@ -55,8 +55,21 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    overflow: hidden;
+    overflow-x: scroll; /* tive que add essa linha pro scroll */
 }
+
+/* Escondendo a barra de rolagem, mas deixando funcional */
+
+.lista-itens::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */ 
+}
+
+.lista-itens {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* --------------------- */
 
 .itens{
     width: 172px;
