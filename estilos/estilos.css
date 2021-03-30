@@ -1,0 +1,65 @@
+body{
+    background-color: #e5e5e5;
+    font-family: "Roboto",sans-serif;
+}
+
+.topo{
+    height: 92px;
+    background-color: #cf2b2b;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    color: #fff;
+    width: 246px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 18px;
+    margin-left: 21px;
+}
+
+.logo span{
+    font-size: 44px;
+    font-family: 'Righteous', cursive;
+}
+
+.menu{
+    width: 100%;
+    margin-left: 19px;
+    margin-bottom: 29px;
+}
+
+.menu > p{
+    font-size: 26px;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 17px;
+}
+
+.lista-itens{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.itens{
+    width: 172px;
+    height: 216px;
+    border-radius: 9px;
+    margin-right: 16px;
+    background-color: #fff;
+}
+
+.itens img{
+   width: 172px;
+}
+
+/* Fontes 
+.righteous{
+    font-family: 'Righteous', cursive;
+}
+*/
