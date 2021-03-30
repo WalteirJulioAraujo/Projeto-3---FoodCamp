@@ -58,6 +58,31 @@ body{
    width: 172px;
 }
 
+.base{
+    height: 92px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.base-menu{
+    width: 364px;
+    height: 61px;
+    background-color: #cbcbcb;
+    border-radius:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.base-menu p{
+    color:#fff;
+    font-size: 20px;
+    
+}
+
 /* Fontes 
 .righteous{
     font-family: 'Righteous', cursive;
