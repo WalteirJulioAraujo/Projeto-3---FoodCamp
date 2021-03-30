@@ -4,10 +4,14 @@ body{
 }
 
 .topo{
+    width:100%;
     height: 92px;
     background-color: #cf2b2b;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
 
 .logo{
@@ -27,7 +31,7 @@ body{
 }
 
 .menu{
-    width: 100%;
+    width: calc(100% - 19px);
     margin-left: 19px;
     margin-bottom: 29px;
 }
@@ -36,6 +40,14 @@ body{
     font-size: 26px;
     font-family: 'Righteous', cursive;
     margin-bottom: 17px;
+}
+
+#primeiro-menu{
+    margin-top: 123px;
+}
+
+#ultimo-menu{
+    margin-bottom: 108px;
 }
 
 .lista-itens{
@@ -59,11 +71,15 @@ body{
 }
 
 .base{
+    width: 100%;
     height: 92px;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
 }
 
 .base-menu{
