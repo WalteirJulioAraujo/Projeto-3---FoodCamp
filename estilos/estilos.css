@@ -1,7 +1,18 @@
 body{
     background-color: #e5e5e5;
     font-family: "Roboto",sans-serif;
+    overflow-x: scroll;
 }
+
+body::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */ 
+}
+
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 
 .topo{
     width:100%;
@@ -33,6 +44,7 @@ body{
 .menu{
     width: calc(100% - 19px);
     margin-left: 19px;
+    margin-right: 19px;
     margin-bottom: 29px;
 }
 
@@ -142,8 +154,14 @@ body{
     
 }
 
-/* Fontes 
-.righteous{
-    font-family: 'Righteous', cursive;
+.finalizar-pedido{
+    width: 377px;
+    height: 353px;
+    border-radius: 9px;
+    background-color: #50D074;
+    position: fixed;
+    top: calc((100% - 337px)/2);
+    right: calc((100% - 353px)/2);
+    display: none;
 }
-*/
+
