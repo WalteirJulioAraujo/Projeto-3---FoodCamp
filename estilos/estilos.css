@@ -42,7 +42,7 @@ body {
 }
 
 .menu{
-    width: calc(100% - 19px);
+    width: calc(100% - 38px);
     margin-left: 19px;
     margin-right: 19px;
     margin-bottom: 29px;
@@ -160,8 +160,15 @@ body {
     border-radius: 9px;
     background-color: #50D074;
     position: fixed;
-    top: calc((100% - 337px)/2);
-    right: calc((100% - 353px)/2);
+    top: calc((100% - 353px)/2);
+    right: calc((100% - 377px)/2);
     display: none;
 }
 
+.finalizar-pedido div{
+    width: 329px;
+    height: 52px;
+    margin: 247px auto 0 auto;
+    border-radius: 100px;
+    background-color: #fff;
+}
