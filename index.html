@@ -24,7 +24,7 @@
     <div class="menu" id="primeiro-menu">
         <p>Primeiro, seu prato</p>
         <div class="lista-itens">
-            <div class="itens">
+            <div class="itens prato1" onclick="selecionado('.prato1')">
                 <img src="Imagens/feijoada.jpeg" alt="Feijoada">
                 <div class="dados-itens">
                     <span class="alimento-nome">Feijoada</span>
@@ -32,7 +32,7 @@
                     <span class="alimento-preco">R$ 20,90</span>
                 </div>
             </div>
-            <div class="itens">
+            <div class="itens prato2" onclick="selecionado('.prato2')">
                 <img src="Imagens/feijoada.jpeg" alt="Feijoada">
                 <div class="dados-itens">
                     <span class="alimento-nome">Feijoada</span>
@@ -40,7 +40,7 @@
                     <span class="alimento-preco">R$ 20,90</span>
                 </div>
             </div>
-            <div class="itens">
+            <div class="itens prato3" onclick="selecionado('.prato3')">
                 <img src="Imagens/feijoada.jpeg" alt="Feijoada">
                 <div class="dados-itens">
                     <span class="alimento-nome">Feijoada</span>
@@ -54,7 +54,15 @@
     <div class="menu">
         <p>Agora, sua bebida</p>
         <div class="lista-itens">
-            <div class="itens">
+            <div class="itens bebida1" onclick="selecionado('.bebida1')">
+                <img src="Imagens/caipirinha.jpg" alt="Caipirinha">
+                <div class="dados-itens ">
+                    <span class="alimento-nome">Caipirinha</span>
+                    <span class="alimento-descricao">Cachaça, gelo, limão e açúcar</span>
+                    <span class="alimento-preco">R$ 20,90</span>
+                </div>
+            </div>
+            <div class="itens bebida2" onclick="selecionado('.bebida2')">
                 <img src="Imagens/caipirinha.jpg" alt="Caipirinha">
                 <div class="dados-itens">
                     <span class="alimento-nome">Caipirinha</span>
@@ -62,15 +70,7 @@
                     <span class="alimento-preco">R$ 20,90</span>
                 </div>
             </div>
-            <div class="itens">
-                <img src="Imagens/caipirinha.jpg" alt="Caipirinha">
-                <div class="dados-itens">
-                    <span class="alimento-nome">Caipirinha</span>
-                    <span class="alimento-descricao">Cachaça, gelo, limão e açúcar</span>
-                    <span class="alimento-preco">R$ 20,90</span>
-                </div>
-            </div>
-            <div class="itens">
+            <div class="itens bebida3" onclick="selecionado('.bebida3')">
                 <img src="Imagens/caipirinha.jpg" alt="Caipirinha">
                 <div class="dados-itens">
                     <span class="alimento-nome">Caipirinha</span>
@@ -84,7 +84,7 @@
     <div class="menu" id="ultimo-menu">
         <p>Por fim, sua sobremesa</p>
         <div class="lista-itens">
-            <div class="itens">
+            <div class="itens sobremesa1" onclick="selecionado('.sobremesa1')">
                 <img src="Imagens/pudim.jpg" alt="pudim">
                 <div class="dados-itens">
                     <span class="alimento-nome">Pudim de leite</span>
@@ -92,7 +92,7 @@
                     <span class="alimento-preco">R$ 8,00</span>
                 </div>
             </div>
-            <div class="itens">
+            <div class="itens sobremesa2" onclick="selecionado('.sobremesa2')">
                 <img src="Imagens/pudim.jpg" alt="pudim">
                 <div class="dados-itens">
                     <span class="alimento-nome">Pudim de leite</span>
@@ -100,7 +100,7 @@
                     <span class="alimento-preco">R$ 8,00</span>
                 </div>
             </div>
-            <div class="itens">
+            <div class="itens sobremesa3" onclick="selecionado('.sobremesa3')">
                 <img src="Imagens/pudim.jpg" alt="pudim">
                 <div class="dados-itens">
                     <span class="alimento-nome">Pudim de leite</span>
@@ -109,8 +109,8 @@
                 </div>
             </div>
 
-            <div class="finalizar-pedido">
-                <div></div>
+            <div class="finalizar-pedido esconder">
+                <div class ="finalizar-pedido-pedir"></div>
             </div>
         </div>
     </div>
@@ -122,5 +122,6 @@
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
