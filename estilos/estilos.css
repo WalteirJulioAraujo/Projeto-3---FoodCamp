@@ -23,6 +23,7 @@ body {
     position: fixed;
     top: 0px;
     left: 0px;
+    z-index : 10;
 }
 
 .logo{
@@ -94,6 +95,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .itens img{
@@ -171,6 +173,14 @@ body {
     margin: 247px auto 0 auto;
     border-radius: 100px;
     background-color: #fff;
+}
+
+.checkmark{
+    color: #32b72f;
+    font-size: 23px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
 
 .esconder{
