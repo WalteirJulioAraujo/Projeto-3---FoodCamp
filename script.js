@@ -29,16 +29,19 @@ function fecharpedido(){
 
     if(checarpedido){
         caixafecharpedido.innerHTML = "Fechar pedido!" ;
-        caixafecharpedido.classList.add("cor-verde");
+        caixafecharpedido.classList.add("cor-verde","fake-hover");
     }
     
 }
 
 function finalizarpedido(){
-    const prato = document.querySelector(".prato .item-selecionado .alimento-nome");
-    const bebida = document.querySelector(".bebida .item-selecionado .alimento-nome");
-    const sobremesa = document.querySelector(".sobremesa .item-selecionado .alimento-nome");
 
+    const prato = document.querySelector(".prato .item-selecionado .alimento-nome");
+    
+    const bebida = document.querySelector(".bebida .item-selecionado .alimento-nome");
+    
+    const sobremesa = document.querySelector(".sobremesa .item-selecionado .alimento-nome");
+    
     const precoprato = Number(document.querySelector(".prato .item-selecionado .alimento-preco").innerHTML.replace("R$ ", "").replace("," , "."));
     const precobebida = Number(document.querySelector(".bebida .item-selecionado .alimento-preco").innerHTML.replace("R$ ", "").replace("," , "."));
     const precosobremesa = Number(document.querySelector(".sobremesa .item-selecionado .alimento-preco").innerHTML.replace("R$ ", "").replace("," , "."));
@@ -50,5 +53,5 @@ function finalizarpedido(){
     const link = "https://wa.me/5521979507925?text=" + uri ;
 
     window.open(link, "_blank");
-
+         
 }

@@ -152,7 +152,13 @@ body {
     font-size: 20px;
 }
 
+.fake-hover{
+    cursor: pointer;
+}
 
+.fake-hover:hover{
+    background-color: #2ace25;
+}
 
 .finalizar-pedido{
     width: 377px;
