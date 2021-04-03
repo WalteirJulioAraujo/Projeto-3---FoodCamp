@@ -148,13 +148,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #fff;
+    font-size: 20px;
 }
 
-.base-menu p{
-    color:#fff;
-    font-size: 20px;
-    
-}
+
 
 .finalizar-pedido{
     width: 377px;
@@ -189,4 +187,9 @@ body {
 
 .item-selecionado{
     border: 4px solid #32b72f;
+}
+
+/* cores */
+.cor-verde{
+    background-color: #32b72f;
 }
