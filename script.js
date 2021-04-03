@@ -39,13 +39,13 @@ function finalizarpedido(){
     const bebida = document.querySelector(".bebida .item-selecionado .alimento-nome");
     const sobremesa = document.querySelector(".sobremesa .item-selecionado .alimento-nome");
 
-    // const precoprato = (document.querySelector(".prato .item-selecionado .alimento-preco").innerHTML).toFixed(2);
-    // const precobebida = (document.querySelector(".bebida .item-selecionado .alimento-preco").innerHTML).toFixed(2);
-    // const precosobremesa = (document.querySelector(".sobremesa .item-selecionado .alimento-preco").innerHTML).toFixed(2);
+    const precoprato = Number(document.querySelector(".prato .item-selecionado .alimento-preco").innerHTML.replace("R$ ", "").replace("," , "."));
+    const precobebida = Number(document.querySelector(".bebida .item-selecionado .alimento-preco").innerHTML.replace("R$ ", "").replace("," , "."));
+    const precosobremesa = Number(document.querySelector(".sobremesa .item-selecionado .alimento-preco").innerHTML.replace("R$ ", "").replace("," , "."));
 
-    // const precototal = precoprato + precobebida + precosobremesa ;
+    const precototal = precoprato + precobebida + precosobremesa ;
 
-    const mensagem = "Olá, gostaria de fazer o pedido: \n" + " - Prato: " + prato.innerHTML + "/n" + "- Bebida: " + bebida.innerHTML + "/n" + " - Sobremesa: " + sobremesa.innerHTML + "/n" + " Total: R$ " ;
+    const mensagem = "Olá, gostaria de fazer o pedido: \n" + "*- Prato:* " + prato.innerHTML + "\n" + "*- Bebida:* " + bebida.innerHTML + "\n" + "*- Sobremesa:* " + sobremesa.innerHTML + "\n" + "*- Total: R$ " + precototal.toFixed(2) + "*" ;
     const uri = encodeURI(mensagem);
     const link = "https://wa.me/5521979507925?text=" + uri ;
 
