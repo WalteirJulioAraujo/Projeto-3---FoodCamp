@@ -36,6 +36,9 @@ function fecharpedido(){
 
 function finalizarpedido(){
 
+    const nome = prompt("Qual seu nome?");
+    const endereco = prompt("Qual seu endereço?");
+
     const prato = document.querySelector(".prato .item-selecionado .alimento-nome");
     
     const bebida = document.querySelector(".bebida .item-selecionado .alimento-nome");
@@ -48,7 +51,7 @@ function finalizarpedido(){
 
     const precototal = precoprato + precobebida + precosobremesa ;
 
-    const mensagem = "Olá, gostaria de fazer o pedido: \n" + "*- Prato:* " + prato.innerHTML + "\n" + "*- Bebida:* " + bebida.innerHTML + "\n" + "*- Sobremesa:* " + sobremesa.innerHTML + "\n" + "*- Total: R$ " + precototal.toFixed(2) + "*" ;
+    const mensagem = "Olá, gostaria de fazer o pedido: \n" + "*- Prato:* " + prato.innerHTML + "\n" + "*- Bebida:* " + bebida.innerHTML + "\n" + "*- Sobremesa:* " + sobremesa.innerHTML + "\n" + "*- Total: R$ " + precototal.toFixed(2) + "*" + "\n*-Nome:* " + nome + "\n*-Endereço:* " + endereco;
     const uri = encodeURI(mensagem);
     const link = "https://wa.me/5521979507925?text=" + uri ;
 
