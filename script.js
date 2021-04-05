@@ -94,3 +94,10 @@ function fechacaixa(){
     const caixa = document.querySelector(".finalizar-pedido");
     caixa.classList.add("esconder");
 }
+
+function fechacaixaicone(){
+    const icone = document.querySelector(".icone-fecharpedido");
+    icone.classList.add("fake-hover");
+    const caixa = document.querySelector(".finalizar-pedido");
+    caixa.classList.add("esconder");
+}

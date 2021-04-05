@@ -188,14 +188,19 @@ body {
     letter-spacing: 0.018em;
 }
 
-.finalizar-pedido > div:first-child{
+.finalizar-pedido .topo-finalizar-pedido{
     height: 61px;
+    width: 100%;
     color: #fff;
     font-size: 22px;
     font-weight: bold;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+.icone-fecharpedido{
+    font-size: 30px;
 }
 
 .pedidos-finalizar-pedido{
