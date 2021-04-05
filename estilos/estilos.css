@@ -155,13 +155,6 @@ body {
     font-size: 20px;
 }
 
-.fake-hover{
-    cursor: pointer;
-}
-
-.fake-hover:hover{
-    background-color: #2ace25;
-}
 
 .finalizar-pedido{
     width: 377px;
@@ -171,16 +164,65 @@ body {
     position: fixed;
     top: calc((100% - 353px)/2);
     right: calc((100% - 377px)/2);
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .finalizar-pedido-pedir{
     width: 329px;
     height: 52px;
-    margin: 247px auto 0 auto;
+    margin: 0 auto;
     border-radius: 100px;
     background-color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
 }
+
+.finalizar-pedido .finalizar-pedido-pedir span{
+    color: #50d074;
+    letter-spacing: 0.018em;
+}
+
+.finalizar-pedido > div:first-child{
+    height: 61px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pedidos-finalizar-pedido{
+    color: #fff;
+    font-size: 22px;
+    height: 173px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pedidos-finalizar-pedido > div{
+    width: 302px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.finalizar-pedido > div:last-child{
+    height: 52px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .checkmark{
     color: #32b72f;
@@ -201,4 +243,29 @@ body {
 /* cores */
 .cor-verde{
     background-color: #32b72f;
+}
+
+/* Efeitos de hover */
+.fake-hover{
+    cursor: pointer;
+}
+
+.fake-hover:hover{
+    background-color: #2ace25;
+}
+
+.fake-hover-pedir{
+    cursor: pointer;
+}
+
+.fake-hover-pedir:hover{
+    background-color: #f2efef;
+}
+
+.fake-hover-cancelar{
+    cursor: pointer;
+}
+
+.fake-hover-cancelar:hover{
+    color: #f2efef;
 }

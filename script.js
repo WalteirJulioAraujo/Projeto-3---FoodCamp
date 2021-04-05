@@ -58,3 +58,39 @@ function finalizarpedido(){
     window.open(link, "_blank");
          
 }
+
+function pedidofeito(){
+    const prato = document.querySelector(".prato .item-selecionado .alimento-nome").innerHTML;
+    const bebida = document.querySelector(".bebida .item-selecionado .alimento-nome").innerHTML;
+    const sobremesa = document.querySelector(".sobremesa .item-selecionado .alimento-nome").innerHTML;
+
+    document.querySelector(".finalizar-pedido .prato-finalizarpedido .nome").innerHTML = prato;
+    document.querySelector(".finalizar-pedido .bebida-finalizarpedido .nome").innerHTML = bebida;
+    document.querySelector(".finalizar-pedido .sobremesa-finalizarpedido .nome").innerHTML = sobremesa;
+
+    document.querySelector(".finalizar-pedido .prato-finalizarpedido .preco").innerHTML = (document.querySelector(".prato .item-selecionado .alimento-preco").innerHTML.replace("R$ ", "").replace("," , "."));
+    document.querySelector(".finalizar-pedido .bebida-finalizarpedido .preco").innerHTML = (document.querySelector(".bebida .item-selecionado .alimento-preco").innerHTML.replace("R$ ", "").replace("," , "."));
+    document.querySelector(".finalizar-pedido .sobremesa-finalizarpedido .preco").innerHTML = (document.querySelector(".sobremesa .item-selecionado .alimento-preco").innerHTML.replace("R$ ", "").replace("," , "."));
+
+    const a = Number(document.querySelector(".prato .item-selecionado .alimento-preco").innerHTML.replace("R$ ", "").replace("," , "."));
+    const b = Number(document.querySelector(".bebida .item-selecionado .alimento-preco").innerHTML.replace("R$ ", "").replace("," , "."));
+    const c = Number(document.querySelector(".sobremesa .item-selecionado .alimento-preco").innerHTML.replace("R$ ", "").replace("," , "."));
+
+    const precototalfinalizarpedido = (a + b + c).toFixed(2);
+
+    document.querySelector(".finalizar-pedido .total-finalizarpedido .preco").innerHTML = precototalfinalizarpedido;
+
+    const caixafinalizarpedido = document.querySelector(".finalizar-pedido");
+    caixafinalizarpedido.classList.toggle("esconder");
+
+    const tudocerto = document.querySelector(".finalizar-pedido-pedir");
+    tudocerto.classList.add("fake-hover-pedir")
+
+    const cancelar = document.querySelector(".finalizar-pedido .cancelar")
+    cancelar.classList.add("fake-hover-cancelar")
+}
+
+function fechacaixa(){
+    const caixa = document.querySelector(".finalizar-pedido");
+    caixa.classList.add("esconder");
+}

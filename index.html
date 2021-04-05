@@ -137,13 +137,21 @@
             </div>
 
             <div class="finalizar-pedido esconder">
-                <div class ="finalizar-pedido-pedir"></div>
+                <div><span class="centralizar">Confirme seu pedido</span></div>
+                <div class="pedidos-finalizar-pedido">
+                    <div class="prato-finalizarpedido"><p class="nome">prato arroz</p> <p class="preco">21,90</p></div>
+                    <div class="bebida-finalizarpedido"><p class="nome">prato arroz</p> <p class="preco">21,90</p></div>
+                    <div class="sobremesa-finalizarpedido"><p class="nome">prato arroz</p> <p class="preco">21,90</p></div>
+                    <div class="total-finalizarpedido"><p>Total</p> <p class="preco"></p></div>
+                </div>
+                <div class ="finalizar-pedido-pedir" onclick="finalizarpedido()"><span>Tudo certo, pode pedir!</span></div>
+                <div><span class="cancelar" onclick="fechacaixa()">Cancelar</span></div>
             </div>
         </div>
     </div>
 
     <div class="base">
-        <div class="base-menu " onclick="finalizarpedido()">
+        <div class="base-menu " onclick="pedidofeito()">
             Selecione os 3 itens <br> para fechar o pedido
         </div>
     </div>
