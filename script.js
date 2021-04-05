@@ -51,7 +51,7 @@ function finalizarpedido(){
 
     const precototal = precoprato + precobebida + precosobremesa ;
 
-    const mensagem = "Olá, gostaria de fazer o pedido: \n" + "*- Prato:* " + prato.innerHTML + "\n" + "*- Bebida:* " + bebida.innerHTML + "\n" + "*- Sobremesa:* " + sobremesa.innerHTML + "\n" + "*- Total: R$ " + precototal.toFixed(2) + "*" + "\n*-Nome:* " + nome + "\n*-Endereço:* " + endereco;
+    const mensagem = "Olá, gostaria de fazer o pedido: \n" + "*- Prato:* " + prato.innerHTML + "\n" + "*- Bebida:* " + bebida.innerHTML + "\n" + "*- Sobremesa:* " + sobremesa.innerHTML + "\n" + "*- Total: R$ " + precototal.toFixed(2) + "*" + "\n*- Nome:* " + nome + "\n*- Endereço:* " + endereco;
     const uri = encodeURI(mensagem);
     const link = "https://wa.me/5521979507925?text=" + uri ;
 
@@ -86,8 +86,8 @@ function pedidofeito(){
     const tudocerto = document.querySelector(".finalizar-pedido-pedir");
     tudocerto.classList.add("fake-hover-pedir")
 
-    const cancelar = document.querySelector(".finalizar-pedido .cancelar")
-    cancelar.classList.add("fake-hover-cancelar")
+    const cancelar = document.querySelector(".finalizar-pedido .cancelar");
+    cancelar.classList.add("fake-hover-cancelar");
 }
 
 function fechacaixa(){
